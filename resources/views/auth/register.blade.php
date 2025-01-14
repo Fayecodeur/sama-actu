@@ -14,19 +14,19 @@
         <div class="form-group">
             <input class="form-control" type="email" name="email" value="{{old('email')}}" placeholder="Email">
             @error('email')
-            <span class="text-red-500">{{$message}}</span>
+            <span class="text-danger">{{$message}}</span>
             @enderror
         </div>
         <div class="form-group">
             <input class="form-control" type="password" name="password" value="{{old('password')}}" placeholder="Mot de passe">
             @error('password')
-            <span class="text-red-500">{{$message}}</span>
+            <span class="text-danger">{{$message}}</span>
             @enderror
         </div>
         <div class="form-group">
             <input class="form-control" type="password" name="password_confirmation"  placeholder="Confirmer Mot de passe">
             @error('password_confirmation')
-            <span class="text-red-500">{{$message}}</span>
+            <span class="text-danger">{{$message}}</span>
             @enderror
         </div>
         <div class="form-group mb-0">
