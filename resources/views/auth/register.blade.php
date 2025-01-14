@@ -34,6 +34,8 @@
         </div>
     </form>
 
-    <div class="text-center dont-have">Vous avez deja un compte? <a href="login.html">Se connecter</a>
+    <div class="text-center dont-have">
+        Vous avez deja un compte?
+        <a href="{{route('login')}}">Se connecter</a>
     </div>
 @endsection
