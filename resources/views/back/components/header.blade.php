@@ -7,7 +7,7 @@
           height="70"
           alt="logo"
         />
-        <span class="logoclass">John Doe</span>
+        <span class="logoclass">{{\Illuminate\Support\Facades\Auth::user()->name}}</span>
       </a>
       <a href="index.html" class="logo logo-small">
         <img
@@ -23,7 +23,7 @@
     </a>
     <a class="mobile_btn" id="mobile_btn"> <i class="fas fa-bars"></i> </a>
     <ul class="nav user-menu">
-      
+
       <li class="nav-item dropdown has-arrow">
         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
           <span class="user-img"
@@ -44,11 +44,11 @@
               />
             </div>
             <div class="user-text">
-              <h6>John Doe</h6>
+              <h6>{{\Illuminate\Support\Facades\Auth::user()->name}}</h6>
               <p class="text-muted mb-0">Administrateur</p>
             </div>
           </div>
-          <a class="dropdown-item" href="profile.html">Profile</a>
+          <a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a>
           <a class="dropdown-item" href="settings.html">Paramettre</a>
           <a class="dropdown-item" href="login.html">Deconnexion</a>
         </div>
